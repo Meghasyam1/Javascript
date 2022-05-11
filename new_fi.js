@@ -25,3 +25,6 @@ obj.log();
 obj.addi();
 console.log("Name is :",obj1.name,"\n","Studying :",obj1.studying,"\n","college :",obj1.college);
 console.log(obj.name);
+function myfunction(){
+document.getElementById("demo").innerHTML="Paragraph changed"
+}
