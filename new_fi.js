@@ -34,8 +34,10 @@ function increment() {
     document.getElementById("num").innerHTML=val
 }
 function decrement() {
+    if(val>0){
     val--;
     document.getElementById("num").innerHTML=val
+    }
 }
 const myInterval=setInterval(run,1000);
 sval = 0;
@@ -43,7 +45,7 @@ ispause = true;
 function run(){
     if(!ispause){
     sval++;
-    document.getElementById("sno").innerText=sval;
+    document.getElementById("sno").innerHTML=sval;
     }
 }
 function start(){
@@ -54,6 +56,9 @@ function stop(){
 }
 function reset(){
     sval=0;
-    document.getElementById("sno").innerText=sval;
+    document.getElementById("sno").innerHTML=sval;
+}
+function color_ch(){
+    document.body.style.backgroundColor = 'yellow';
 }
 
